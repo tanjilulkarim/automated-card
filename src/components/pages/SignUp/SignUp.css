@@ -1,6 +1,12 @@
+.background-1{
+    background: linear-gradient(
+103.29deg
+, rgb(20, 0, 120) -18.4%, rgb(108, 49, 188) 112.42%);
+}
 .brand{
     margin-top: 67px;
     margin-bottom: 60px;
+    margin-left: 80px;
 }
 .logo{
    margin-bottom: 41px; 
@@ -8,11 +14,23 @@
 .line_break{
     margin-bottom: 27px; 
     color: white;
+    width: 85%;
 }
 
 /* headline text  */
+.login_page{
+    display: flex;
+}
+.login_left{
+    width: 50%;
+      background: linear-gradient(
+103.29deg
+, rgb(20, 0, 120) -18.4%, rgb(108, 49, 188) 112.42%);
+}
+.login_right{
+    width: 50%;
+}
 .header-text{
-    margin: 0px 0px 16px;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 3rem;
@@ -20,7 +38,7 @@
     letter-spacing: 0em;
 }
 
-.header-p{
+.header_p{
     margin: 0px;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -36,3 +54,125 @@
     margin-top: 50px;
     margin-left: 70px;
 }
+
+
+
+
+/* 2nd part login part */
+
+/* login text */
+.login-text{
+    text-align: center;
+    margin-top: 100px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+} 
+
+
+.logIn-form{
+    margin-top: 50px;
+}
+
+.email input{
+    width: 75%;
+    margin-left: 65px;
+    border: 1px solid red;
+    height: 56px;
+    outline: none !important;
+    /* padding: 26px 20px 12px; */
+    padding: 0 15px;
+    font-size: 16px;
+    border-radius: 28px;
+
+}    
+.password input{
+    width: 75%;
+    margin-left: 65px;
+    border: 1px solid red;
+    height: 56px;
+    outline: none !important;
+     padding: 0 15px;
+    font-size: 16px;
+    border-radius: 28px;
+    
+}
+
+.submit-btn{
+        margin-top: 20px;
+    margin-bottom: 32px;
+    width: 75%;
+    border: 1px solid red;
+    height: 56px;
+    outline: none !important;
+    font-size: 16px;
+    border-radius: 35px;
+    margin-right: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.forgot-pass{
+    text-decoration: none;
+    color: black;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+    text-align: center;
+
+}
+
+.line_break-2{
+    margin-bottom: 27px;
+    margin-left: 75px;
+    margin-top: 27px;
+    color: grey;
+    width: 70%;
+}
+.header_p a{
+    color: #fff;
+    text-decoration: none;
+}
+.header_p a:hover{
+    text-decoration: underline;
+}
+.SignUP{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(32, 191, 184);
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 992px){
+    .login_page{
+    display: flex;
+    flex-direction: column;
+}
+.login_right,.login_left{
+    width: 100%;
+}
+.brand{
+    margin-left: 25px;
+}
+.email input{
+    width: 40%;
+  margin-left: 267px;
+}
+.password input {
+    width: 40%;
+  
+    margin-left: 267px;
+}
+.submit-btn{
+    width: 40%;
+}
+
+
+}
+

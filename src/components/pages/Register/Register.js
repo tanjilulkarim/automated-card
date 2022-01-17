@@ -1,13 +1,8 @@
 import React from 'react';
-import './SignUp.css';
 import logo from '../../../images/download.svg'
 import banner_img from '../../../images/robogradingBanner.png'
-// import Create from '../../Create/Create';
-// import Login from '../../Login/Login';
 
-const SignUp = () => {
-
-
+const Register = () => {
     return (
         <>
             <div className="login_page">
@@ -32,41 +27,50 @@ const SignUp = () => {
                 </div>
                 <div className="login_right">
                     <div className="login-text">
-                        <p>Log In to Your AGS Account to Access
+                        <p>Sign Up to AGS to Access Robograding
                             <br /> Robograding</p>
 
                         <form action="" className='logIn-form'>
                             <div className="main_form">
                                 <div className='email'>
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name">
+                                    </input>
+                                </div>
+                                <br />
+                                <div className='email'>
+                                    <input type="text" class="form-control" id="name" placeholder="Create Username">
+                                    </input>
+                                </div>
+                                <br />
+                                <div className='email'>
+                                    <input type="email" class="form-control" id="name" placeholder="Email">
                                     </input>
                                 </div>
                                 <br />
                                 <div className='password'>
                                     <input type="password" class="form-control" id="password" placeholder="Password"></input>
                                 </div>
+                                <br />
+                                <div className='password'>
+                                    <input type="password" class="form-control" id="password" placeholder=" Confirm Password"></input>
+                                </div>
                             </div>
-                            <button className='submit-btn'>Log In</button>
+                            <button className='submit-btn'>Sign Up</button>
                             <br />
 
 
                         </form>
-                        <a className='forgot-pass' href="/">Forgot password</a>
+
                         <div className="line_break-2">
                             <hr />
                         </div>
-                        <p className='fs-6'>New to AGS?</p>
-                        <a className='SignUP' href="/">Sign Up</a>
+                        <p className='fs-6'>Have an account?</p>
+                        <a className='SignUP' href="/">Sign In</a>
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </>
     );
 };
 
-export default SignUp;
+export default Register;
